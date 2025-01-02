@@ -1,5 +1,6 @@
-const  = () => {
-    return (  );
+const Story = () => {
+    return ( <>
+    </> );
 }
  
-export default ;
+export default Story;

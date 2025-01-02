@@ -61,7 +61,7 @@ const StoryItem = ({
             <h3 className="font-sans text-md font-light">{description}</h3>
           </div>
 
-          <div className="flex justify-between items-center pr-20">
+          <div className="flex flex-col md:flex-row  justify-between pr-10 items-center space-y-5 md:space-x-0 ">
             <div className="flex gap-x-5 items-center">
               <StarIcon fill={"yellow"} strokeWidth={"1"} size={20} />
               <div className="font-sans font-light text-sm">Dec 15 2024</div>
@@ -76,12 +76,13 @@ const StoryItem = ({
             </div>
           </div>
         </div>
-        <div className="w-full md:w-[30%]">
+        <div className="hidden md:block w-[30%]   md:0  items-center ">
           <Image
             src={"/sample1-storyItem.png"}
             alt="image related to the article"
-            height={180}
-            width={180}
+            height={220}
+            width={220}
+            
           />
         </div>
       </div>

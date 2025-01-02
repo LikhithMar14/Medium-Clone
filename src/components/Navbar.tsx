@@ -16,9 +16,12 @@ const Navbar = () => {
         <div className="flex justify-between gap-x-6">
           <Logo height={150} width={150} priority={true} />
           {/* Search Component */}
+          <div className="hidden md:block">
           <Search />
+          </div>
+         
         </div>
-        <div className="flex justify-between space-x-10">
+        <div className="flex justify-between md:space-x-10 space-x-4">
           <Link href={"/notifications"} passHref>
             <BellIcon strokeWidth={"1"} className="font-extralight" size={27} />
           </Link>
